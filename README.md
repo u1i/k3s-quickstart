@@ -7,6 +7,9 @@
 ### Check for Ready node, 
 
 takes maybe 30 seconds
+
+Run
+
 `k3s kubectl get node`
 
 until the output looks like this:
