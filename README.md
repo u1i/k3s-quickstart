@@ -34,7 +34,11 @@ until the output looks like this:
 
 ## 4 – Use the new Service
 
-Do a curl commands on the loadbalancer IP and the respective port :)
+`curl localhost:8080`
+
+> Hello, world!
+
+><hr>Running on myapp-64c8f4d567-xlfrn
 
 ## 5 Scale up!
 
