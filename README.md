@@ -22,6 +22,7 @@ until the output looks like this:
 
 ### Show running services/containers
 `kubectl get pods --all-namespaces`
+
 `kubectl get deployments --all-namespaces`
 
 ## 3 – Expose Service
