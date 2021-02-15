@@ -18,25 +18,31 @@ until the output looks like this:
 
 ## 2 – Create a Service on Kubernetes
 
-`kubectl run my-app --image=u1ih/hello --port=8080`
+`k3s kubectl create deployment myapp --image=u1ih/hello`
 
-### Show running services/containers
-`kubectl get pods --all-namespaces`
+### Show running pods and deployments
+`k3s kubectl get pods --all-namespaces`
 
-`kubectl get deployments --all-namespaces`
+`k3s kubectl get deployments --all-namespaces`
 
 ## 3 – Expose Service
 
-`kubectl expose deployment my-app --port=8080 --type=LoadBalancer`
+`k3s kubectl expose deployment myapp --port=8080 --type=LoadBalancer`
 
 ### List Services
-`kubectl get services --all-namespaces`
+`k3s kubectl get services --all-namespaces`
 
 ## 4 – Use the new Service
 
-curl commands :)
+Do a curl commands on the loadbalancer IP and the respective port :)
 
-## 5 – Clean Up
+## 5 Scale up!
 
-`kubectl delete deployment my-app`
-`kubectl delete service my-app`
+`k3s kubectl autoscale deployment myapp --min=5 --max=10`   
+
+`k3s kubectl get deployment`
+
+## 6 – Clean Up
+
+`k3s kubectl delete deployment my-app`
+`k3s kubectl delete service my-app`
