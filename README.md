@@ -1,5 +1,11 @@
 # k3s Quickstart
 
+You need:
+
+* Virtual machine (on the cloud?) with 2GB RAM (or more)
+* Operating System: Linux (Ubuntu / Debian / CentOS)
+* Shell access as root
+
 ## 1 – Install k3s
 
 `curl -sfL https://get.k3s.io | sh -`
