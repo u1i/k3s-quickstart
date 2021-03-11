@@ -52,6 +52,10 @@ until the output looks like this:
 
 `k3s kubectl get deployment`
 
+Run the curl command again a couple of times! Do you notice something?
+
+`curl localhost:8080`
+
 ## 6 – Clean Up
 
 `k3s kubectl delete deployment my-app`
